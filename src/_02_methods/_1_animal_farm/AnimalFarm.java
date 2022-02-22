@@ -8,7 +8,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-
+import javax.swing.JOptionPane;
 public class AnimalFarm {
 	
 	/***********  SOUND ***************
@@ -16,7 +16,7 @@ public class AnimalFarm {
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-	boolean canPlaySounds = true;
+	boolean canPlaySounds = false;
 
 	
 	public static void main(String[] args) {
@@ -30,7 +30,37 @@ public class AnimalFarm {
 		*/			 
 			
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		String result = JOptionPane.showInputDialog(null, "Choose a sound you want to hear");
+		if (result.equalsIgnoreCase("moo")) {
+			moo();
+			
+			
+			
+		}
+		if (result.equalsIgnoreCase("quack")) {
+			quack();
+			
+			
+			
+		}
+		if (result.equalsIgnoreCase("woof")) {
+			woof();
+			
+			
+			
+		}
+		if (result.equalsIgnoreCase("meow")) {
+			meow();
+			
+			
+			
+		}
+		if (result.equalsIgnoreCase("llamaScream")) {
+			llamaScream();
+			
+			
+			
+		}
 	}
 
 	void moo() {

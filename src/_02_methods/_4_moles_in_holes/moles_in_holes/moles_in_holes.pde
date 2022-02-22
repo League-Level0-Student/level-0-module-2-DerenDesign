@@ -5,7 +5,7 @@
 void setup() {
      size(400, 400);
      background(78, 166, 51); // green grass
-     
+   
      // This code draws the holes. Run the program to see them.
      
      fill(0, 0, 0);
@@ -13,11 +13,18 @@ void setup() {
      ellipse(70, 119, 100, 30);
      ellipse(300, 60, 100, 30);
      ellipse(297, 350, 100, 30);
+
 }
+     
+     
 
 void draw() {
 
 /* Write code here that uses the drawMole method to put a mole in each of the holes */
+drawMole(200, 200);
+drawMole(70, 119);
+drawMole(300, 60);
+drawMole(297, 350);
 
 
 }
@@ -34,4 +41,3 @@ void drawMole(int moleX, int moleY) {
      ellipse(moleX, moleY-5, 10, 10); // nose
      ellipse(moleX, moleY+10, 20, 5); // mouth
 }
-
